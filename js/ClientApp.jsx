@@ -1,6 +1,7 @@
 const ce = React.createElement;
 
 const myTitle = function(props) {
+  // parameters -> parent element, attributes, child element
   return ce(
     "div",
     null,
@@ -8,6 +9,8 @@ const myTitle = function(props) {
   );
 };
 const MyFirstComponent = function() {
+  // example of nested component
+  //multiple instances of myTitle
   return ce(
     "div",
     { id: "my-first-component" },
